@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Models (too large for git)
+*.pth
+*.pt
+*.safetensors
+*.ckpt
+models/
+
+# Images
+input/
+output/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.bmp
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
