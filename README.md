@@ -1,6 +1,6 @@
 # 🚀 Lightweight Upscaler
 
-> 版本：6
+> 版本：7
 
 极简的图像放大工具，无需完整 Stable Diffusion WebUI，直接使用 ESRGAN 模型进行批量放大。
 
