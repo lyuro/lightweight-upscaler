@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+if command -v python >/dev/null 2>&1; then
+  PYTHON=python
+elif command -v python3 >/dev/null 2>&1; then
+  PYTHON=python3
+elif command -v py >/dev/null 2>&1; then
+  PYTHON="py -3"
+else
+  echo "pre-commit: python not found; cannot bump VERSION" >&2
+  exit 1
+fi
+
+$PYTHON scripts/bump_version.py
+git add VERSION README.md colab_upscale.ipynb
