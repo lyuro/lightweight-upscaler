@@ -1,6 +1,6 @@
 # 🚀 Lightweight Upscaler
 
-> 版本：7
+> 版本：8
 
 极简的图像放大工具，无需完整 Stable Diffusion WebUI，直接使用 ESRGAN 模型进行批量放大。
 
@@ -17,11 +17,12 @@
 
 | 模型 | 架构/大小 | 特点 | 推荐场景 |
 |------|-----------|------|----------|
-| **4x-UltraSharp** (默认) | ESRGAN / ~67 MB | 通用锐化型，速度快、显存友好，细节和纹理更强 | AI 图、插画、压缩图、不确定用哪个时 |
+| **4x-UltraSharpV2** (默认) | DAT2 / ~140 MB | 通用后继型，比旧版 UltraSharp 更清晰、细节更好；比 ESRGAN 更慢、更吃显存，使用 FP32 | AI 图、插画、照片、压缩图、不确定用哪个时 |
+| **4x-UltraSharp** | ESRGAN / ~67 MB | 通用锐化型，速度快、显存友好，细节和纹理更强 | 想要更快或显存更紧时 |
 | **4x-Nomos8kDAT** | DAT / ~295 MB | 照片修复型，质量潜力更高，但更慢、更吃显存，使用 FP32 | 真实照片、JPEG 压缩、轻微模糊、resize 退化 |
 | **4x-Nomos8kSC** | ESRGAN / ~67 MB | 照片均衡型，基于 Nomos8k_sfw 真实照片训练，处理 JPG 压缩和轻微模糊更稳 | 真实照片修复，想要比 UltraSharp 更偏照片取向时 |
 
-简单选择：不确定先用 **4x-UltraSharp**；照片优先试 **4x-Nomos8kSC**；显存够且能接受慢一些，再试 **4x-Nomos8kDAT**。
+简单选择：不确定先用 **4x-UltraSharpV2**；要更快或显存紧用 **4x-UltraSharp**；照片优先试 **4x-Nomos8kSC**；显存够且能接受慢一些，再试 **4x-Nomos8kDAT**。
 
 ## 🚀 快速开始
 
